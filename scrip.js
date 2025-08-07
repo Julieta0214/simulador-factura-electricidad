@@ -18,13 +18,16 @@ const cargoFijo = function(){
     return cargoFijo
 }
 let cargo = cargoFijo()
+
 //Función de expresión que retorne el valor del IVA como porcentaje fijo//
+
 const cargoIva = function(){
     let cargoIva = Number(prompt("Ingrese el valor del IVA: "))
     return cargoIva
 }
 
-let Iva = valorIva()
+let Iva = cargoIva()
+
 //Función flecha que retorne el subtotal multiplicando consumo por tarifa//
 const calcularSubtotal = () =>{
     let subtotal = consumo * tarifa
@@ -32,14 +35,18 @@ const calcularSubtotal = () =>{
 }
 
 let subTotal = calcularSubtotal()
+
 //Función flecha que retorne el valor del IVA aplicado sobre el subtotal//
+
 const valorSubtotalIva = () =>{
     let valorSubIva = iva/100 * subTotal
     return valorSubIva
 }
 
 let valorSubIva = valorSubtotalIva()
+
 //Función flecha que retorne el total a pagar sumando subtotal, IVA y cargo fijo//
+
 const totalPagarServicio = () =>{
     let valorPagar =  subTotal + valorSubIva + cargo
     return valorPagar
