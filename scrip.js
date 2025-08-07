@@ -57,7 +57,7 @@ let totalPagar = totalPagarServicio()
 function resultadoEjecucion(){
     console.log("El consumo del mes fue: " + consumo)
     console.log("La tarifa del mes es : " + tarifa)
-    console.log("El subtotal del consumo: " + subtotal)
+    console.log("El subtotal del consumo: " + Subtotal)
     console.log("El subtotal del iva es : " + valorSubIva)
     console.log("Elvalor del cargo fijo es: " + cargo)
     console.log("El valor total a pagar es: " + totalPagar)
