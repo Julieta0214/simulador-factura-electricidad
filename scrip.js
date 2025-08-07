@@ -21,12 +21,12 @@ let cargo = cargoFijo()
 
 //Función de expresión que retorne el valor del IVA como porcentaje fijo//
 
-const cargoIva = function(){
+const valorIva = function(){
     let cargoIva = Number(prompt("Ingrese el valor del IVA: "))
     return cargoIva
 }
 
-let Iva = cargoIva()
+let Iva = valorIva()
 
 //Función flecha que retorne el subtotal multiplicando consumo por tarifa//
 const calcularSubtotal = () =>{
